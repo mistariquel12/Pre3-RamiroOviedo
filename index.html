@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Coderhouse</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <div class="containerBudget">
+        <h1>Presupuestos para fiestas</h1>
+        <h3>En el siguiente cuestionario ingresar los valores correspondientes. Muchas gracias</h3>
+        <form action="GET" id="formulario">
+            <label for="tipoDeEvento">Tipo de evento</label>
+        <select name="eventos" id="tipoDeEvento">
+            <option id="vacio" value="vacio">--Seleccionar--</option>
+            <option id="cumpleQuince" value="Cumpleaños de 15">Cumpleaños de 15</option>
+            <option id="CumpleDieciocho" value="Cumpleaños de 18">Cumpleaños de 18</option>
+            <option id="cumpleAdulto" value="Cumpleaños de adulto">Cumpleaños de adultos</option>
+            <option id="boda" value="Boda o Casamiento">Boda / Casamiento</option>
+            <option id="empresarial" value="Evento empresarial">Evento empresarial</option>
+            <option id="Evento social"  value="Evento social">Evento social</option>
+        </select>
+        <label for="cantidadDeInvitados">Invitados +10 años</label>
+        <input type="number" name="MayoresDe10" id="mayoresDe10">
+        <label for="cantidadDeInvitados">Invitados -10 años</label>
+        <input type="number" name="MenoresDe10" id="menoresDe10">
+        <label for="menuCena">Seleccionar menú de cena</label>
+        <select name="cena" id="cena">
+            <option id="vacio" value="vacio">--Seleccionar--</option>
+            <option id="milanesa" value="2000">Milanesa con papas fritas</option>
+            <option id="noquis"value="1000">Ñoquis de papa con Bolognesa</option>
+            <option id="lasagna"value="1200">Lasagna clásica</option>
+            <option id="asado"value="2500">Asado con ensaladas</option>
+            <option id="pizza"value="1500">¡Pizza party!</option>
+            <option id="ravioles"value="2000">Ravioles con salsa 4 quesos</option>
+        </select>
+        </form>
+        <button id="botonPresupuesto">Generar presupuesto</button>
+        <div class="totalPresupuesto">
+            <p  id="totalPresupuesto">Aqui verá el total de su presupuesto. Asegúrese de ingresar todos los datos correctamente</p>
+        </div>
+        <button type="submit" id="reiniciarPresupuesto">REINICIAR PRESUPUESTO</button>
+    </div>
+   
+    
+    <script src="../JS/main.js"></script>
+</body>
+</html>

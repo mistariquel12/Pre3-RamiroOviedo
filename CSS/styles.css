@@ -1,0 +1,39 @@
+body {
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+.containerBudget, form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+.totalPresupuesto {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(129, 1, 1);
+}
+
+button {
+    background-color: gray;
+    padding: 1em;
+    margin: 1em 0 1em 0;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
